@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> YouTube</title>
+
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/lib/onsenui.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+
+  <link rel="stylesheet" href="css/onsenui.css">
+  <link rel="stylesheet" href="css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body ng-app="myApp" ng-controller="VideosController">
+ 
+     
+
+  <ons-modal var="modal" ng-click="youtube.player.stopVideo(); modal.hide();">
+    <div id="player">
+      <div id="placeholder" style="width: 100%"></div>
+    </div>
+  </ons-modal>
+
+ <ons-tabbar>
+    <ons-tab page="html/search.html" persistent no-reload active="true" icon="fa fa-search" ></ons-tab>
+    <ons-tab page="html/history.html" persistent no-reload  icon="fa fa-history" ></ons-tab>
+  </ons-tabbar>
+
+</body>
+</html>
